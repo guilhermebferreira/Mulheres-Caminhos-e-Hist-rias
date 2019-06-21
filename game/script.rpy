@@ -32,45 +32,13 @@ label start:
     "seu karma atual é [karma]"
 
 
-    show eileen cansada
+    show voce cansada
 
-    $ karma -= 1
-
-
-    "seu karma atual é [karma]"
 
     e "Você esta ao mesmo tempo cansada pelo dia longo. \nE feliz por estar chegando em casa"
 
-    # This ends the game.
+    jump briga_com_marido_leve
 
-    show marido zangado:
-        yalign 0.2
-
-    m "zangado"
-
-    show marido gritando
-
-    m "gritando"
-
-
-    show marido neutro
-
-    m "..."
-
-    menu:
-
-        "Mesmo exausta, seu marido te cobra que ainda faça cumpra com as obrigações da casa"
-
-        "Você abaixa a cabeça e consente.":
-            $ karma -= 5
-            jump vou_pra_cozinha
-
-        "Você responde ao desaforo":
-
-            $ karma += 5
-            jump responde_desaforo
-
-    return
 
 label vou_pra_cozinha:
     scene bg cozinha
@@ -121,3 +89,127 @@ label outro_dia:
     "seu karma atual é [karma]"
 
 
+label briga_com_marido_leve:
+    scene bg sala
+    with fade
+
+    show marido neutro at left:
+        yalign 0.2
+
+    m "Chegando em casa tarde de novo?"
+
+    m "Cheguei em casa cansado, com fome"
+    m "Trabalhei o dia inteiro"
+
+
+    show marido zangado at left:
+        yalign 0.2
+
+
+
+
+    show marido neutro at left:
+        yalign 0.2
+
+
+    menu:
+
+        m "Não acha que o minimo seria ter minha esposa me esperando? E algo gostoso na cozinha para comer..."
+
+        "Acho um absurdo ter que escutar isso":
+            $ karma += 5
+            jump vou_preparar_algo
+
+        "Desculpa meu bem, tambem estou cansada":
+
+            $ karma -= 5
+            jump vou_preparar_algo
+
+
+        "Tem comida na geladeira, porque não esquentou no microondas?":
+
+            $ karma += 5
+            jump tem_comida_na_geladeira
+
+label vou_preparar_algo:
+    scene bg sala
+    with fade
+
+
+    show marido neutro:
+        yalign 0.2
+
+    m "É por isso que eu te amo"
+
+
+    show marido satisfeito:
+        yalign 0.2
+
+
+    m "Obrigado meu bem"
+
+    jump dia2
+
+label tem_comida_na_geladeira:
+    scene bg sala
+    with fade
+
+
+    show marido zangado:
+        yalign 0.2
+
+    m "Tambem não precisa me tratar desse jeito né?"
+
+
+    show marido neutro:
+        yalign 0.2
+
+
+    m "Se não quer cozinhar tudo bem"
+    m "Eu me viro aqui"
+
+    hide marido
+
+    jump dia2
+
+label dia2:
+    scene bg sala
+    with fade
+
+    "..."
+    return
+
+
+label briga_com_marido_seria:
+
+    scene bg sala
+    with fade
+
+    show marido zangado:
+        yalign 0.2
+
+    m "zangado"
+
+    show marido gritando
+
+    m "gritando"
+
+
+    show marido neutro
+
+    m "..."
+
+    menu:
+
+        "Mesmo exausta, seu marido te cobra que ainda faça cumpra com as obrigações da casa"
+
+        "Você abaixa a cabeça e consente.":
+            $ karma -= 5
+            jump vou_pra_cozinha
+
+        "Você responde ao desaforo":
+
+            $ karma += 5
+            jump responde_desaforo
+
+    return
