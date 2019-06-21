@@ -12,7 +12,7 @@
 ##
 ## The _() surrounding the string marks it as eligible for translation.
 
-define config.name = _("Teste")
+define config.name = _("Mulheres: Caminhos e Histórias")
 
 
 ## Determines if the title given above is shown on the main menu screen. Set
@@ -37,7 +37,7 @@ define gui.about = _p("""
 ## distribution. This must be ASCII-only, and must not contain spaces, colons,
 ## or semicolons.
 
-define build.name = "Teste"
+define build.name = "Mulheres: Caminhos e Histórias"
 
 
 ## Sounds and music ############################################################
@@ -142,7 +142,7 @@ default preferences.afm_time = 15
 ## This generally should not be changed, and if it is, should always be a
 ## literal string, not an expression.
 
-define config.save_directory = "Teste-1561070251"
+define config.save_directory = "sua_historia-1561070251"
 
 
 ## Icon ########################################################################
@@ -197,7 +197,7 @@ init python:
 ## Set this to a string containing your Apple Developer ID Application to enable
 ## codesigning on the Mac. Be sure to change it to your own Apple-issued ID.
 
-# define build.mac_identity = "Developer ID Application: Guy Shy (XHTE5H7Z42)"
+# define build.mac_identity = "Equipe Mulheres: Caminhos e Histórias"
 
 
 ## A Google Play license key is required to download expansion files and perform

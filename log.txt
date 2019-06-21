@@ -1,34 +1,34 @@
-Fri Jun 21 10:50:11 2019
+Fri Jun 21 14:34:51 2019
 Linux-4.10.0-38-generic-x86_64-with-debian-stretch-sid
 Ren'Py 7.3.0.271
  
 
-Bootstrap to the start of init.init took 0.08s
+Bootstrap to the start of init.init took 0.09s
 Early init took 0.00s
 Loader init took 0.01s
-Loading error handling took 0.02s
-Loading script took 0.17s
-Loading save slot metadata. took 0.01s
+Loading error handling took 0.04s
+Loading script took 0.15s
+Loading save slot metadata. took 0.02s
 Loading persistent took 0.00s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.06s
+Running init code took 0.11s
 Loading analysis data took 0.04s
 Analyze and compile ATL took 0.00s
 Index archives took 0.00s
-Backing up script files to '/home/guilherme/.renpy/backups/Teste':
+Backing up script files to '/home/guilherme/.renpy/backups/Jogo - Mulheres: Caminhos e Hist\xc3\xb3rias':
 Dump and make backups. took 0.07s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
 Initial gc. took 0.02s
 DPI scale factor: 1.000000
-Creating interface object took 0.07s
+Creating interface object took 0.19s
 Cleaning stores took 0.00s
 Init translation took 0.04s
 Build styles took 0.01s
 Load screen analysis took 0.00s
 Analyze screens took 0.02s
 Save screen analysis took 0.08s
-Prepare screens took 0.08s
+Prepare screens took 0.09s
 Save pyanalysis. took 0.00s
 Save bytecode. took 0.07s
 Running _start took 0.00s
@@ -352,11 +352,18 @@ Texture testing:
 - 2048px textures work.
 FBO Maximum Texture Size: 16384
 Root FBO is: 0
-Total time until interface ready: 1.10414886475s
+Total time until interface ready: 1.30014610291s
 - Target is 5 frames in 0.333333333333 seconds.
 - Frame drawn at 0.000000 seconds.
-- Frame drawn at 0.003646 seconds.
-- Frame drawn at 0.007985 seconds.
-- Frame drawn at 0.009773 seconds.
-- Frame drawn at 0.013344 seconds.
-- 0.013344 seconds to render 5 frames.
+- Frame drawn at 0.003794 seconds.
+- Frame drawn at 0.005776 seconds.
+- Frame drawn at 0.007501 seconds.
+- Frame drawn at 0.010667 seconds.
+- 0.010667 seconds to render 5 frames.
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.01s
+Load screen analysis took 0.02s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s
