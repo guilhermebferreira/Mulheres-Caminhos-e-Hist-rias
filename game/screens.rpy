@@ -254,13 +254,13 @@ screen quick_menu():
             yalign 1.0
 
             textbutton _("Voltar") action Rollback()
-            textbutton _("History") action ShowMenu('history')
-            textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
-            textbutton _("Auto") action Preference("auto-forward", "toggle")
-            textbutton _("Save") action ShowMenu('save')
-            textbutton _("Q.Save") action QuickSave()
-            textbutton _("Q.Load") action QuickLoad()
-            textbutton _("Prefs") action ShowMenu('preferences')
+            textbutton _("Histórico") action ShowMenu('history')
+            textbutton _("Pular") action Skip() alternate Skip(fast=True, confirm=True)
+            textbutton _("Automático") action Preference("auto-forward", "toggle")
+            textbutton _("Salvar") action ShowMenu('save')
+            textbutton _("Salvamento rápido") action QuickSave()
+            textbutton _("Carregamento rápido") action QuickLoad()
+            textbutton _("Preferencias") action ShowMenu('preferences')
 
 
 ## This code ensures that the quick_menu screen is displayed in-game, whenever
@@ -301,32 +301,32 @@ screen navigation():
 
         if main_menu:
 
-            textbutton _("Start") action Start()
+            textbutton _("Começar") action Start()
 
         else:
 
-            textbutton _("History") action ShowMenu("history")
+            textbutton _("Histórico") action ShowMenu("history")
 
-            textbutton _("Save") action ShowMenu("save")
+            textbutton _("Salvar") action ShowMenu("save")
 
-        textbutton _("Load") action ShowMenu("load")
+        textbutton _("Carregar") action ShowMenu("load")
 
-        textbutton _("Preferences") action ShowMenu("preferences")
+        textbutton _("Preferências") action ShowMenu("preferences")
 
         if _in_replay:
 
-            textbutton _("End Replay") action EndReplay(confirm=True)
+            textbutton _("Encerrar Replay") action EndReplay(confirm=True)
 
         elif not main_menu:
 
-            textbutton _("Main Menu") action MainMenu()
+            textbutton _("Menu Principal") action MainMenu()
 
         textbutton _("Sobre") action ShowMenu("about")
 
         if renpy.variant("pc"):
 
             ## Help isn't necessary or relevant to mobile devices.
-            textbutton _("Help") action ShowMenu("help")
+            textbutton _("Ajuda") action ShowMenu("help")
 
             ## The quit button is banned on iOS and unnecessary on Android.
             textbutton _("Sair") action Quit(confirm=not main_menu)

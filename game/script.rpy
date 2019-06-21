@@ -73,7 +73,7 @@ label start:
     return
 
 label vou_pra_cozinha:
-    scene bg casa
+    scene bg cozinha
     with fade
 
 
@@ -83,7 +83,8 @@ label vou_pra_cozinha:
     e "você tem razão..."
 
 
-    show marido satisfeito
+    show marido satisfeito:
+        yalign 0.2
 
     e "vou preparar alguma coisa pra gente comer"
 
@@ -106,7 +107,8 @@ label responde_desaforo:
     e "você acha que sou obrigada?"
 
 
-    show marido zangado at left
+    show marido zangado at left:
+        yalign 0.2
 
     "..."
     jump outro_dia
@@ -117,3 +119,5 @@ label outro_dia:
 
 
     "seu karma atual é [karma]"
+
+

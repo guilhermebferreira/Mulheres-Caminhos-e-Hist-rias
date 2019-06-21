@@ -3,8 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="797bdbe0-4ca1-414c-9a4a-dca3e7711a47" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game/cache/bytecode.rpyb" afterPath="$PROJECT_DIR$/game/cache/bytecode.rpyb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game/cache/pyanalysis.rpyb" afterPath="$PROJECT_DIR$/game/cache/pyanalysis.rpyb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game/cache/screens.rpyb" afterPath="$PROJECT_DIR$/game/cache/screens.rpyb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game/gui.rpyc" afterPath="$PROJECT_DIR$/game/gui.rpyc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game/options.rpyc" afterPath="$PROJECT_DIR$/game/options.rpyc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game/saves/auto-1-LT1.save" afterPath="$PROJECT_DIR$/game/saves/auto-1-LT1.save" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game/saves/auto-10-LT1.save" afterPath="$PROJECT_DIR$/game/saves/auto-10-LT1.save" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game/saves/auto-2-LT1.save" afterPath="$PROJECT_DIR$/game/saves/auto-2-LT1.save" />
@@ -17,10 +19,12 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game/saves/auto-9-LT1.save" afterPath="$PROJECT_DIR$/game/saves/auto-9-LT1.save" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game/saves/persistent" afterPath="$PROJECT_DIR$/game/saves/persistent" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game/screens.rpyc" afterPath="$PROJECT_DIR$/game/screens.rpyc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game/script.rpyc" afterPath="$PROJECT_DIR$/game/script.rpyc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game/tl/None/common.rpymc" afterPath="$PROJECT_DIR$/game/tl/None/common.rpymc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/errors.txt" afterPath="$PROJECT_DIR$/errors.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game/gui.rpy" afterPath="$PROJECT_DIR$/game/gui.rpy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game/options.rpy" afterPath="$PROJECT_DIR$/game/options.rpy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game/saves/navigation.json" afterPath="$PROJECT_DIR$/game/saves/navigation.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game/screens.rpy" afterPath="$PROJECT_DIR$/game/screens.rpy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log.txt" afterPath="$PROJECT_DIR$/log.txt" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -46,8 +50,8 @@
       <file leaf-file-name="options.rpy" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/game/options.rpy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="7" lean-forward="false" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="21" />
+            <state relative-caret-position="-2113">
+              <caret line="39" column="37" lean-forward="false" selection-start-line="39" selection-start-column="37" selection-end-line="39" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -56,18 +60,28 @@
       <file leaf-file-name="screens.rpy" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/game/screens.rpy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="398" column="59" lean-forward="false" selection-start-line="398" selection-start-column="59" selection-end-line="398" selection-end-column="59" />
+            <state relative-caret-position="195">
+              <caret line="303" column="48" lean-forward="false" selection-start-line="303" selection-start-column="43" selection-end-line="303" selection-end-column="48" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gui.rpy" pinned="false" current-in-tab="true">
+      <file leaf-file-name="script.rpy" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/game/script.rpy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="393">
+              <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gui.rpy" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/game/gui.rpy">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="195">
-              <caret line="25" column="34" lean-forward="false" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
+              <caret line="34" column="32" lean-forward="false" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -85,11 +99,20 @@
       <find>text_color</find>
       <find>color</find>
       <find>main_menu:</find>
-      <find>show_name</find>
       <find>main_menu_text</find>
-      <find>title</find>
       <find>accent_color</find>
+      <find>build</find>
+      <find>show_name</find>
+      <find>title</find>
+      <find>Start</find>
+      <find>history</find>
+      <find>start(</find>
+      <find>histor</find>
+      <find>start</find>
     </findStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/game</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -97,9 +120,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/game/gui.rpy" />
         <option value="$PROJECT_DIR$/game/options.rpy" />
         <option value="$PROJECT_DIR$/game/screens.rpy" />
-        <option value="$PROJECT_DIR$/game/gui.rpy" />
       </list>
     </option>
   </component>
@@ -151,24 +174,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="game" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Jogo - Mulheres: Caminhos e Histórias" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Jogo - Mulheres: Caminhos e Histórias" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="game" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -355,15 +360,16 @@
     <frame x="0" y="0" width="1366" height="741" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -371,7 +377,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -395,26 +400,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/game/gui.rpy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="34" column="32" lean-forward="false" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/game/options.rpy">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="7" lean-forward="false" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="21" />
+        <state relative-caret-position="-2113">
+          <caret line="39" column="37" lean-forward="false" selection-start-line="39" selection-start-column="37" selection-end-line="39" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/saves/navigation.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="0" column="7608" lean-forward="false" selection-start-line="0" selection-start-column="7608" selection-end-line="0" selection-end-column="7608" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/game/screens.rpy">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="398" column="59" lean-forward="false" selection-start-line="398" selection-start-column="59" selection-end-line="398" selection-end-column="59" />
+        <state relative-caret-position="195">
+          <caret line="303" column="48" lean-forward="false" selection-start-line="303" selection-start-column="43" selection-end-line="303" selection-end-column="48" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/game/gui.rpy">
+    <entry file="file://$PROJECT_DIR$/game/script.rpy">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="25" column="34" lean-forward="false" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
+        <state relative-caret-position="393">
+          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding />
         </state>
       </provider>
