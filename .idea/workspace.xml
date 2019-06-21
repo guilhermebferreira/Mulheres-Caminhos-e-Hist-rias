@@ -2,8 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="797bdbe0-4ca1-414c-9a4a-dca3e7711a47" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Readme.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game/options.rpy" afterPath="$PROJECT_DIR$/game/options.rpy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game/cache/bytecode.rpyb" afterPath="$PROJECT_DIR$/game/cache/bytecode.rpyb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game/cache/screens.rpyb" afterPath="$PROJECT_DIR$/game/cache/screens.rpyb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game/gui.rpyc" afterPath="$PROJECT_DIR$/game/gui.rpyc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game/saves/auto-1-LT1.save" afterPath="$PROJECT_DIR$/game/saves/auto-1-LT1.save" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game/saves/auto-10-LT1.save" afterPath="$PROJECT_DIR$/game/saves/auto-10-LT1.save" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game/saves/auto-2-LT1.save" afterPath="$PROJECT_DIR$/game/saves/auto-2-LT1.save" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game/saves/auto-3-LT1.save" afterPath="$PROJECT_DIR$/game/saves/auto-3-LT1.save" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game/saves/auto-4-LT1.save" afterPath="$PROJECT_DIR$/game/saves/auto-4-LT1.save" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game/saves/auto-5-LT1.save" afterPath="$PROJECT_DIR$/game/saves/auto-5-LT1.save" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game/saves/auto-6-LT1.save" afterPath="$PROJECT_DIR$/game/saves/auto-6-LT1.save" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game/saves/auto-7-LT1.save" afterPath="$PROJECT_DIR$/game/saves/auto-7-LT1.save" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game/saves/auto-8-LT1.save" afterPath="$PROJECT_DIR$/game/saves/auto-8-LT1.save" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game/saves/auto-9-LT1.save" afterPath="$PROJECT_DIR$/game/saves/auto-9-LT1.save" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game/saves/persistent" afterPath="$PROJECT_DIR$/game/saves/persistent" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game/screens.rpyc" afterPath="$PROJECT_DIR$/game/screens.rpyc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/errors.txt" afterPath="$PROJECT_DIR$/errors.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game/gui.rpy" afterPath="$PROJECT_DIR$/game/gui.rpy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game/saves/navigation.json" afterPath="$PROJECT_DIR$/game/saves/navigation.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log.txt" afterPath="$PROJECT_DIR$/log.txt" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,8 +46,8 @@
       <file leaf-file-name="options.rpy" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/game/options.rpy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="899">
-              <caret line="199" column="68" lean-forward="false" selection-start-line="199" selection-start-column="68" selection-end-line="199" selection-end-column="68" />
+            <state relative-caret-position="300">
+              <caret line="20" column="7" lean-forward="false" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -38,8 +56,8 @@
       <file leaf-file-name="screens.rpy" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/game/screens.rpy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3765">
-              <caret line="86" column="35" lean-forward="false" selection-start-line="86" selection-start-column="35" selection-end-line="86" selection-end-column="35" />
+            <state relative-caret-position="225">
+              <caret line="398" column="59" lean-forward="false" selection-start-line="398" selection-start-column="59" selection-end-line="398" selection-end-column="59" />
               <folding />
             </state>
           </provider>
@@ -49,7 +67,7 @@
         <entry file="file://$PROJECT_DIR$/game/gui.rpy">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="195">
-              <caret line="84" column="7" lean-forward="false" selection-start-line="84" selection-start-column="3" selection-end-line="84" selection-end-column="7" />
+              <caret line="25" column="34" lean-forward="false" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -59,7 +77,18 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
+      <find>main</find>
       <find>splas</find>
+      <find>gui.text_c</find>
+      <find>acce</find>
+      <find>config.name</find>
+      <find>text_color</find>
+      <find>color</find>
+      <find>main_menu:</find>
+      <find>show_name</find>
+      <find>main_menu_text</find>
+      <find>title</find>
+      <find>accent_color</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -69,6 +98,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/game/options.rpy" />
+        <option value="$PROJECT_DIR$/game/screens.rpy" />
+        <option value="$PROJECT_DIR$/game/gui.rpy" />
       </list>
     </option>
   </component>
@@ -366,16 +397,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/game/options.rpy">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="899">
-          <caret line="199" column="68" lean-forward="false" selection-start-line="199" selection-start-column="68" selection-end-line="199" selection-end-column="68" />
+        <state relative-caret-position="300">
+          <caret line="20" column="7" lean-forward="false" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/game/screens.rpy">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3765">
-          <caret line="86" column="35" lean-forward="false" selection-start-line="86" selection-start-column="35" selection-end-line="86" selection-end-column="35" />
+        <state relative-caret-position="225">
+          <caret line="398" column="59" lean-forward="false" selection-start-line="398" selection-start-column="59" selection-end-line="398" selection-end-column="59" />
           <folding />
         </state>
       </provider>
@@ -383,7 +414,7 @@
     <entry file="file://$PROJECT_DIR$/game/gui.rpy">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
-          <caret line="84" column="7" lean-forward="false" selection-start-line="84" selection-start-column="3" selection-end-line="84" selection-end-column="7" />
+          <caret line="25" column="34" lean-forward="false" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
           <folding />
         </state>
       </provider>
