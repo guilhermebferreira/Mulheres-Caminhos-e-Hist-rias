@@ -91,7 +91,7 @@ label rota_passiva_pede_demissao:
     chefe1 "Boa sorte na sua jornada"
 
 
-    return
+    jump final_demissao
 
 
 

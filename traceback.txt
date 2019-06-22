@@ -19,4 +19,4 @@ ScriptError: could not find label 'rota_problema_trabalho'.
 Linux-4.10.0-38-generic-x86_64-with-debian-stretch-sid
 Ren'Py 7.3.0.271
 Mulheres: Caminhos e Histórias 1.0
-Sat Jun 22 13:38:39 2019
+Sat Jun 22 15:09:06 2019

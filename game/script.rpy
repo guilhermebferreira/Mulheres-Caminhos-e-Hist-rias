@@ -3,7 +3,7 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define personagem = Character("Personagem", who_color='#8904B1')
+define personagem = Character("Você", who_color='#8904B1')
 define marido = Character("Marido", who_color='#444444')
 define chefe1 = Character("Chefe", who_color='#222222')
 
@@ -19,7 +19,7 @@ default karma_relacionamento = 0
 label start:
 
 
-    jump final_empresaria
+    #jump final_na_empresa
 
     scene bg bairro
 
@@ -35,7 +35,7 @@ label start:
     show mulher_trabalho triste:
         yalign 0.2
 
-    "Mas ainda você ainda tem uma aula pra assitir..."
+    "Mas ainda você ainda tem uma aula pra assistir..."
 
     personagem "Estou exausta."
 
@@ -126,14 +126,20 @@ label chega_em_casa:
     scene bg bairro
     with fade
 
+    show mulher_trabalho neutra at right:
+        yalign 0.2
 
-    "Você esta ao mesmo tempo cansada pelo dia longo. \nE feliz por estar chegando em casa"
+
+    "Você está ao mesmo tempo cansada pelo dia longo. \nE feliz por estar chegando em casa"
 
     "Você mora em um bairro afastado no entorno de brasília..."
+ 
 
-    "Levando um dia após o outro..."
+    "você tira a chave da bolsa e apenas de saber que está chegando em casa..."
 
-    "você tira a chave da bolsa e apenas de saber que esta chegando em casa..."
+
+    show mulher_trabalho sorrindo at right:
+        yalign 0.2
 
     extend "\nse sente leve"
 
@@ -153,7 +159,7 @@ label briga_com_marido_leve:
         yalign 0.2
 
 
-    marido "Isto esta começando a virar uma rotina pelo visto"
+    marido "Isto está começando a virar uma rotina pelo visto"
  
 
     show marido zangado at left:
@@ -171,7 +177,7 @@ label briga_com_marido_leve:
         
         marido "Já são quase nove, estou morrendo de fome"
 
-        "Tambem estou morrendo de fome":
+        "Também estou morrendo de fome":
 
 
             show mulher_trabalho neutra at right:
@@ -283,21 +289,21 @@ label dia_cheio_trabalho:
             show mulher_trabalho triste at right:
                 yalign 0.2
             $ karma_autoestima -= 10
-            chefe1 "Preciso desses relatórios de balanço paara amanhã!"
+            chefe1 "Preciso desses relatórios de balanço para amanhã!"
             personagem "Relatórios de balanço?"
 
-        "Desculpa, esta falando comigo?":
+        "Desculpa, está falando comigo?":
             show mulher_trabalho neutra at right:
                 yalign 0.2
             $ karma_autoestima += 10
-            chefe1 "Preciso desses relatórios de balanço paara amanhã!"
+            chefe1 "Preciso desses relatórios de balanço para amanhã!"
             personagem "Relatórios de balanço?"
 
     personagem "Mas isso é responsabilidade de outro departamento..."
 
     chefe1 "Eles estão um pouco sobrecarregados esse semana"
 
-    chefe1 "E alguem realmente precisa cuidar desses relatórios"
+    chefe1 "E alguém realmente precisa cuidar desses relatórios"
 
     show chefe1 satisfeito:
         yalign 0.2
@@ -307,18 +313,31 @@ label dia_cheio_trabalho:
         chefe1 "Consegue me entregar ainda hoje?"
 
         "E quem me ajuda com a minhas demandas??":
-            personagem "Relatórios de balanço?"
+            personagem "E quem me ajuda com a minhas demandas?"
+
+            $ karma_autoestima += 10
+
+            jump relatorios
 
         "Tudo bem":
             personagem "Você não pediria se não fossem muito importantes, certo?"
             chefe1 "São bem mais do que isso mocinha"
 
+            $ karma_autoestima -= 10
+            jump relatorios
+
+    jump relatorios
+
+
+    
+
+
+label relatorios:
     scene bg noite
     with fade
+ 
 
-    hide chefe1
-
-    "Você acaba ficando bem além do horario de expdiente para conseguir entregar todas as demanas"
+    "Você acaba ficando bem além do horario de expediente para conseguir entregar todas as demanas"
 
     "Bem além do que pretendia"
 
@@ -369,7 +388,7 @@ label briga_com_marido_seria:
             $ karma_relacionamento = -10
             jump rota_atitude
 
-    return
+    jump rota_passiva
 
     
     

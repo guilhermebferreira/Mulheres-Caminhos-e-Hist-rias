@@ -1,8 +1,8 @@
-label rota_probelma_trabalho:
+label rota_problema_trabalho:
     scene bg trabalho1
     with fade
 
-    show chefe1 zangado with vpunch:
+    show chefe1 zangado at left with vpunch:
         yalign 0.2
 
 
@@ -12,24 +12,34 @@ label rota_probelma_trabalho:
     chefe1 "Não tem nada do que eu preciso aqui"
 
 
-    show chefe1 neutro:
+    show chefe1 neutro at left:
         yalign 0.2
 
     chefe1 "Mocinha"
 
     extend ", se você quiser continuar por aqui, vou precisar que você vista a camisa da empresa!"
 
+    show chefe1 zangado at left with vpunch:
+        yalign 0.2
+
+
+    show mulher_trabalho surpresa at right:
+        yalign 0.2
 
     menu:
         chefe1 "Você não tem capacidade de fazer um simples relatório sozinha?"
 
         "Relatório de balanço não é minha responsabilidade":
+
+
+            show mulher_trabalho neutra at right:
+                yalign 0.2
             
             $ karma_autoestima += 10
-            personagem "Olha, eses relatórios que você me pediu com urgência..."
+            personagem "Olha, esses relatórios que você me pediu com urgência..."
             extend "\n Em cima da hora"
             personagem "Nem são de responsabilidade do meu departamento"
-            show chefe1 zangado:
+            show chefe1 zangado at left:
                 yalign 0.2
 
             personagem "E eu visto a camisa da empresa sim!"
@@ -38,23 +48,31 @@ label rota_probelma_trabalho:
             jump vai_continuar_na_empresa
             
         "Vou tentar melhorar":
+
+
+            show mulher_trabalho triste at right:
+                yalign 0.2
             
             $ karma_autoestima -= 10
             personagem "Desculpe"
 
-            show chefe1 satisfeito:
+            show chefe1 satisfeito at left:
                 yalign 0.2
             extend ", vou tentar fazer melhor"
-            show chefe1 neutro:
+            show chefe1 neutro at left:
                 yalign 0.2
             personagem "Irei agora mesmo revisar estes relatórios"
 
-            show chefe1 satisfeito:
+            show chefe1 satisfeito at left:
                 yalign 0.2
 
             chefe1 "Esterei esperando por eles as 14 horas, na minha mesa"
 
         "Eu fiquei até depois do expediente pra conseguir entregar esses relatórios":
+
+
+            show mulher_trabalho neutra at right:
+                yalign 0.2
             
             $ karma_autoestima += 10
             personagem "Olha, eu fiquei até depois do expediente ontem para poder entregar esses relatórios"
@@ -62,7 +80,7 @@ label rota_probelma_trabalho:
             personagem "Se não esta bom"
 
 
-            show chefe1 pena:
+            show chefe1 pena at left:
                 yalign 0.2
             extend ", podemos melhorar"
             personagem "Mas não acho legal você falar assim comigo"
@@ -74,7 +92,7 @@ label rota_probelma_trabalho:
 
 
 
-    return
+    jump vai_continuar_na_empresa
 
 
 label vai_continuar_na_empresa:
@@ -137,7 +155,7 @@ label me_demito:
     show chefe1 neutro at left:
                 yalign 0.2
 
-    chefe1 "Entendo que você esta cansada"
+    chefe1 "Entendo que você esteja cansada"
 
     chefe1 "Você deve estar confusa"
     show chefe1 satisfeito at left:
@@ -168,6 +186,8 @@ label me_demito:
     "Não foi uma decisão fácil"
 
     "Mas aquele ambiente de trabalho não estava te fazendo bem"
+
+    jump final_demissao
 
 
 

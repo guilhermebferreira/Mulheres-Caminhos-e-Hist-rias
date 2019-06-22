@@ -560,7 +560,7 @@ screen about():
             if gui.about:
                 text "[gui.about!t]\n"
 
-            text _("Made with {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]")
+            text _("Um jogo, no formato visual novel, no qual a história se desenvolve de acordo com as ações do jogador. O jogador será colocado no papel de uma personagem feminina, inserida em um contexto socio-econômico bem definido e a partir daí lidando com situações que, em geral, podem fazer parte desse cotidiano.")
 
 
 ## This is redefined in options.rpy to add text to the about screen.
@@ -974,7 +974,7 @@ screen help():
 
     tag menu
 
-    default device = "keyboard"
+    default device = "ajuda"
 
     use game_menu(_("Help"), scroll="viewport"):
 
@@ -985,6 +985,7 @@ screen help():
 
             hbox:
 
+                textbutton _("Precisa de ajuda?") action SetScreenVariable("device", "ajuda")
                 textbutton _("Keyboard") action SetScreenVariable("device", "keyboard")
                 textbutton _("Mouse") action SetScreenVariable("device", "mouse")
 
@@ -995,6 +996,8 @@ screen help():
                 use keyboard_help
             elif device == "mouse":
                 use mouse_help
+            elif device == "ajuda":
+                use ajuda_help
             elif device == "gamepad":
                 use gamepad_help
 
@@ -1044,6 +1047,27 @@ screen keyboard_help():
     hbox:
         label "V"
         text _("Toggles assistive {a=https://www.renpy.org/l/voicing}self-voicing{/a}.")
+
+
+screen ajuda_help():
+
+    hbox:
+        label _("CVV")
+        text _("(61) 3326-4111")
+    hbox:
+        label _("CVV Brasília")
+        text _("188")
+    hbox:
+        label _("Delegacias de Atendimento à Mulher")
+        text _("180")
+    hbox:
+        label _("Delegacia da Mulher no DF")
+        text _("(61) 3244-3400")
+    hbox:
+        label _("Disque-Denúncia")
+        text _("181")
+
+
 
 
 screen mouse_help():

@@ -73,7 +73,7 @@ label fim_relacionamento:
     "Era estranho encarar a casa vazia"
 
 
-    "Ficava a sesnsação de que estava faltando alguma coisa"
+    "Ficava a sensação de que estava faltando alguma coisa"
 
     "Mas no fundo você sabe que foi a decisão correta"
 
