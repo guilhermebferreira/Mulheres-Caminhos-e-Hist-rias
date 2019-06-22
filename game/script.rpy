@@ -5,7 +5,7 @@
 
 define personagem = Character("Personagem", who_color='#8904B1')
 define marido = Character("Marido", who_color='#444444')
-define chefe1 = Character("Marido", who_color='#444444')
+define chefe1 = Character("Chefe", who_color='#444444')
 default karma = 0
 
 
@@ -17,7 +17,7 @@ label start:
     # add a file (named either "bg room.png" or "bg room.jpg") to the
     # images directory to show it.
 
-    #jump rota_atitude
+    jump rota_probelma_trabalho
 
     scene bg bairro
 
@@ -223,7 +223,8 @@ label dia_cheio_trabalho:
 
     personagem "Mal tenho conseguido dar conta dessas demandas..."
 
-    show chefe1 neutro
+    show chefe1 neutro:
+        yalign 0.2
 
     chefe1 "Mocinha"
 
@@ -243,6 +244,9 @@ label dia_cheio_trabalho:
     chefe1 "Eles estão um pouco sobrecarregados esse semana"
 
     chefe1 "E alguem realmente precisa cuidar desses relatórios"
+
+    show chefe1 satisfeito:
+        yalign 0.2
     
 
     menu:
@@ -257,6 +261,8 @@ label dia_cheio_trabalho:
 
     scene bg noite
     with fade
+
+    hide chefe1
 
     "Você acaba ficando bem além do horario de expdiente para conseguir entregar todas as demanas"
 

@@ -55,4 +55,32 @@ label rota_atitude:
     
     
 
-    return
+    jump fim_relacionamento
+
+
+
+label fim_relacionamento:
+    scene bg centro
+    with fade
+
+
+    "No dia seguinte"
+
+    extend ", você acordou se sentindo mais leve..."
+
+    scene bg sala
+
+    "Era estranho encarar a casa vazia"
+
+
+    "Ficava a sesnsação de que estava faltando alguma coisa"
+
+    "Mas no fundo você sabe que foi a decisão correta"
+
+    scene bg cozinha
+
+    "Você prepara um café e vai para o trabalho"
+
+
+    jump rota_problema_trabalho
+

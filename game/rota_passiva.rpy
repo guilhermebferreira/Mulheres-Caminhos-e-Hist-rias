@@ -10,11 +10,11 @@ label rota_passiva:
     marido "..."
 
     marido "Você esta sobrecarregada"
-    marido "Qualque um consegue enxergar isso"
+    marido "Qualquer um consegue enxergar isso"
     show marido satisfeito:
         yalign 0.2
-    marido "Conciiar trabalho e faculdade está sendo demais para você"
-    
+    marido "Conciliar trabalho e faculdade está sendo demais para você"
+
     show marido neutro:
     
     marido "Basta dar uma olhada nessa casa que a gente vê que você não esta dando conta"
@@ -47,7 +47,8 @@ label rota_passiva_pede_demissao:
 
     scene bg trabalho
 
-    show chefe1 neutro
+    show chefe1 neutro:
+        yalign 0.2
 
     menu:
 
@@ -56,8 +57,18 @@ label rota_passiva_pede_demissao:
         "Sim, eu tenho":
             $ karma -= 20
 
+
+    show chefe1 pena:
+        yalign 0.2
+
     chefe1 "é uma pena..."
+    show chefe1 neutro:
+        yalign 0.2
+
     chefe1 "Boa sorte na sua jornada"
+
+
+    return
 
 
 
@@ -68,8 +79,13 @@ label rota_passiva_tranca_faculdade:
 
     "No dia seguinte"
 
-    extend ", você foi ao centro apenas para protocolar o trancamento do curso"
+    extend ", você acordou mais cedo para protocolar o trancamento do curso antes de ir para o trabalho..."
 
     scene bg aula
 
     "Não fo nem um pouco fácil preencher aquele formulário"
+
+
+    jump rota_problema_trabalho
+
+

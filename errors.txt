@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/rota_atitude.rpy", line 26: Line is indented, but the preceding show statement statement does not expect a block. Please check this line's indentation.
-    yalign 0.2
-    ^
+The label rota_passiva_tranca_faculdade is defined twice, at
+  File "game/rota_atitude.rpy", line 62 and
+  File "game/rota_passiva.rpy", line 75.
 
 Ren'Py Version: Ren'Py 7.3.0.271
-Sat Jun 22 01:34:32 2019
+Sat Jun 22 10:53:56 2019
