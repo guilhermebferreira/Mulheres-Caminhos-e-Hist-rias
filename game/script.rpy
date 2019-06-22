@@ -3,8 +3,9 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define e = Character("Personagem", who_color='#8904B1')
-define m = Character("Marido", who_color='#444444')
+define personagem = Character("Personagem", who_color='#8904B1')
+define marido = Character("Marido", who_color='#444444')
+define chefe1 = Character("Marido", who_color='#444444')
 default karma = 0
 
 
@@ -16,6 +17,8 @@ label start:
     # add a file (named either "bg room.png" or "bg room.jpg") to the
     # images directory to show it.
 
+    #jump rota_atitude
+
     scene bg bairro
 
     # This shows a character sprite. A placeholder is used, but you can
@@ -25,14 +28,25 @@ label start:
 
     # These display lines of dialogue.
 
-    "Em um bairro afastado no entorno de brasília..."
 
+    "Depois de um dia muito cansativo no trabalho"
 
-    show voce cansada
+    "Tudo que você quer é chegar em casa"
 
+    "Mas ainda você ainda tem uma aula pra assitir..."
 
+    personagem "Estou exausta."
 
-    jump voltando_pra_casa
+    extend "\nAcho que não faria mal deixar de ir na pós só por hoje"
+
+    menu:
+        personagem "Então, será que..."
+
+        "Vou direto pra casa, descançar um pouco seria bom":
+            jump volta_pra_casa
+
+        "Melhor ir pra faculdade":
+            jump vai_pra_faculdade
 
 
 
@@ -46,13 +60,13 @@ label vou_pra_cozinha:
     show marido neutro:
         yalign 0.2
 
-    e "você tem razão..."
+    personagem "você tem razão..."
 
 
     show marido satisfeito:
         yalign 0.2
 
-    e "vou preparar alguma coisa pra gente comer"
+    personagem "vou preparar alguma coisa pra gente comer"
 
     "..."
     jump outro_dia
@@ -65,12 +79,12 @@ label responde_desaforo:
     show marido neutro:
         yalign 0.2
 
-    e "você não vê que fiquei o dia inteiro dando duro"
-    e "trabalhando pra ajudar a colocar comido aqui dentro de casa, assim como você"
-    e "e ainda estudando pra tentar um futuro melhor pra gente"
+    personagem "você não vê que fiquei o dia inteiro dando duro"
+    personagem "trabalhando pra ajudar a colocar comido aqui dentro de casa, assim como você"
+    personagem "e ainda estudando pra tentar um futuro melhor pra gente"
 
     show marido zangado
-    e "você acha que sou obrigada?"
+    personagem "você acha que sou obrigada?"
 
 
     show marido zangado at left:
@@ -80,23 +94,7 @@ label responde_desaforo:
     jump outro_dia
  
 
-
-label voltando_pra_casa:
-    scene bg bairro
-    with fade
-
-    e "Estou exausta"
-
-    e "Acho que não faria mal deixar de ir na faculdade só por hoje"
-
-    menu:
-        e "Então, será que..."
-
-        "Vou direto pra casa, descançar um pouco seria bom":
-            jump volta_pra_casa
-
-        "Melhor ir pra faculdade":
-            jump vai_pra_faculdade
+ 
 
 label volta_pra_casa:
     scene bg onibus
@@ -130,9 +128,11 @@ label chega_em_casa:
 
     "Levando um dia após o outro..."
 
-    "você tira a chave da bolsa e se sente leve"
+    "você tira a chave da bolsa e apenas de saber que esta chegando em casa..."
 
-    e "É sempre bom chegar em casa!"
+    extend "\nse sente leve"
+
+    personagem "É sempre bom chegar em casa!"
 
     jump briga_com_marido_leve
 
@@ -142,11 +142,11 @@ label briga_com_marido_leve:
     scene bg sala 
 
 
-    m "Chegando tarde de novo?"
+    marido "Chegando tarde de novo?"
 
     show marido neutro at left:
         yalign 0.2
-    m "Já são quase nove, estou morrendo de fome"
+    marido "Já são quase nove, estou morrendo de fome"
 
     show marido neutro at left:
         yalign 0.2
@@ -176,10 +176,10 @@ label vou_preparar_algo:
     show marido neutro:
         yalign 0.2
 
-    m "Você sabe que eu te amo"
+    marido "Você sabe que eu te amo"
 
 
-    m "Não sabe?"
+    marido "Não sabe?"
 
 
     show marido satisfeito:
@@ -202,18 +202,67 @@ label vou_preparar_algo:
 
 
 label dia2:
+    scene bg noite
+    with fade
+
+    "Você foi dormir extausta esse dia"
+ 
     scene bg bairro
     with fade
 
-    "um novo dia..."
-    jump briga_com_marido_seria
+    "No dia seguinte"
+
+    extend ", você acordou bem cedo para não se atrasar para o trabalho"
+    jump dia_cheio_trabalho
 
 label dia_cheio_trabalho:
     scene bg trabalho1
     with fade
 
-    " Gina está se sentindo muito sobrecarregada. Ela acredita que por ter entrado agora, os superiores dela estão pegando muito pesado, pedindo pra ela fazer tarefas que não são da sua função"
-    " e ficar até depois do seu horário de trabalho"
+    personagem "Tenho tanta coisa pra fazer"
+
+    personagem "Mal tenho conseguido dar conta dessas demandas..."
+
+    show chefe1 neutro
+
+    chefe1 "Mocinha"
+
+    extend "preciso que você cuide desses relatórios de balanço..."
+
+    menu:
+        personagem "(\"mocinha\", Odeio que me chamem assim)"
+
+        "Pois não, como posso ajudar":
+            personagem "Relatórios de balanço?"
+
+        "Desculpa, esta falando comigo?":
+            personagem "Relatórios de balanço?"
+
+    personagem "Mas isso é responsabilidade de outro departamento..."
+
+    chefe1 "Eles estão um pouco sobrecarregados esse semana"
+
+    chefe1 "E alguem realmente precisa cuidar desses relatórios"
+    
+
+    menu:
+        chefe1 "Consegue me entregar ainda hoje?"
+
+        "E quem me ajuda com a minhas demandas??":
+            personagem "Relatórios de balanço?"
+
+        "Tudo bem":
+            personagem "Você não pediria se não fossem muito importantes, certo?"
+            chefe1 "São bem mais do que isso mocinha"
+
+    scene bg noite
+    with fade
+
+    "Você acaba ficando bem além do horario de expdiente para conseguir entregar todas as demanas"
+
+    "Bem além do que pretendia"
+
+    jump briga_com_marido_seria
 
 
 label briga_com_marido_seria:
@@ -224,22 +273,26 @@ label briga_com_marido_seria:
     show marido zangado:
         yalign 0.2
 
-    m "zangado"
+    marido "Assim fica dificil"
 
-    show marido gritando
+    marido "Outro dia do mesmo jeito?"
 
-    m "gritando"
+
+    show marido gritando:
+        yalign 0.2
+
+    marido "Parece que você não tem consideração comigo"
 
 
     show marido neutro
 
-    m "..."
+    marido "Você não vai falar nada?"
 
     menu:
 
         "Mesmo exausta, seu marido te cobra que ainda faça cumpra com as obrigações da casa"
 
-        "Você abaixa a cabeça e consente.":
+        "Você abaixa a cabeça e apenas consente.":
             $ karma -= 5
             jump rota_passiva
 
