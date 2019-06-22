@@ -1,22 +1,22 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/rota_passiva.rpy", line 25, in script
-    jump rota_passiva_pede_demissao
-ScriptError: could not find label 'rota_passiva_pede_demissao'.
+  File "game/rota_atitude.rpy", line 85, in script
+    jump rota_problema_trabalho
+ScriptError: could not find label 'rota_problema_trabalho'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/rota_passiva.rpy", line 25, in script
-    jump rota_passiva_pede_demissao
+  File "game/rota_atitude.rpy", line 85, in script
+    jump rota_problema_trabalho
   File "/home/guilherme/Programas/renpy-7.3.0-sdk/renpy/ast.py", line 1695, in execute
     rv = renpy.game.script.lookup(target)
   File "/home/guilherme/Programas/renpy-7.3.0-sdk/renpy/script.py", line 894, in lookup
     raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label 'rota_passiva_pede_demissao'.
+ScriptError: could not find label 'rota_problema_trabalho'.
 
 Linux-4.10.0-38-generic-x86_64-with-debian-stretch-sid
 Ren'Py 7.3.0.271
 Mulheres: Caminhos e Histórias 1.0
-Sat Jun 22 01:09:37 2019
+Sat Jun 22 13:38:39 2019

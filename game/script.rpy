@@ -6,7 +6,7 @@
 define personagem = Character("Personagem", who_color='#8904B1')
 define marido = Character("Marido", who_color='#444444')
 define chefe1 = Character("Chefe", who_color='#222222')
-default karma = 0
+
 
 default karma_autoestima = 0
 default karma_estudo = 0
@@ -19,7 +19,7 @@ default karma_relacionamento = 0
 label start:
 
 
-    #jump me_demito
+    jump final_empresaria
 
     scene bg bairro
 
@@ -147,20 +147,36 @@ label briga_com_marido_leve:
     scene bg sala 
 
 
-    marido "Chegando tarde de novo?"
+    marido "Você chegou bem tarde hoje"
 
     show marido neutro at left:
         yalign 0.2
-    marido "Já são quase nove, estou morrendo de fome"
+
+
+    marido "Isto esta começando a virar uma rotina pelo visto"
+ 
+
+    show marido zangado at left:
+        yalign 0.2
+
+
+
+    marido "Enfim..."
 
     show marido neutro at left:
         yalign 0.2
 
     menu:
 
-        "teste"
+        
+        marido "Já são quase nove, estou morrendo de fome"
 
-        "Tambem estou morrendo de fome"
+        "Tambem estou morrendo de fome":
+
+
+            show mulher_trabalho neutra at right:
+                yalign 0.2
+
             personagem "Você chegou mais cedo..."
             personagem "Porque não preparou nada pra gente?"
             
@@ -170,12 +186,30 @@ label briga_com_marido_leve:
 
         "Não tem como chegar mais cedo com essa rotina. Mas vou preparar algo gostoso pra gente":
             
+            
+
+            show mulher_trabalho triste at right:
+                yalign 0.2
+
             personagem "Estou estudando para conseguir um futuro melhor pra gente"
+
+
+
+            show mulher_trabalho neutra at right:
+                yalign 0.2
             personagem "Mas vou preparar algo gostoso para a gente comer"
             $ karma_relacionamento -= 10
             jump vou_preparar_algo
 
         "Melhor eu ir direto pra cozinha preparar algo":
+            
+
+            show mulher_trabalho triste at right:
+                yalign 0.2
+
+
+            personagem "Melhor eu ir direto pra cozinha preparar algo"
+
             $ karma_relacionamento += 10
             $ karma_autoestima -= 10
             jump vou_preparar_algo
@@ -246,14 +280,14 @@ label dia_cheio_trabalho:
         personagem "(\"mocinha\", Odeio que me chamem assim)"
 
         "Pois não, como posso ajudar":
-            show mulher_trabalho triste at left:
+            show mulher_trabalho triste at right:
                 yalign 0.2
             $ karma_autoestima -= 10
             chefe1 "Preciso desses relatórios de balanço paara amanhã!"
             personagem "Relatórios de balanço?"
 
         "Desculpa, esta falando comigo?":
-            show mulher_trabalho neutra at left:
+            show mulher_trabalho neutra at right:
                 yalign 0.2
             $ karma_autoestima += 10
             chefe1 "Preciso desses relatórios de balanço paara amanhã!"
@@ -296,7 +330,7 @@ label briga_com_marido_seria:
     scene bg sala
     with fade
 
-    show marido zangado:
+    show marido zangado at left:
         yalign 0.2
 
     marido "Assim fica dificil"
@@ -304,15 +338,19 @@ label briga_com_marido_seria:
     marido "Outro dia do mesmo jeito?"
 
 
-    show marido gritando:
+    show marido gritando at left:
         yalign 0.2
 
     marido "Parece que você não tem consideração comigo"
 
 
-    show marido neutro
+    show marido neutro at left:
+        yalign 0.2
 
     marido "Você não vai falar nada?"
+
+    show mulher_trabalho surpresa at right:
+        yalign 0.2
 
     menu:
 
@@ -320,11 +358,15 @@ label briga_com_marido_seria:
 
         "Você abaixa a cabeça e apenas consente.":
             
+            show mulher_trabalho triste at right:
+                yalign 0.2
             $ karma_relacionamento += 10
             jump rota_passiva
 
         "Você responde ao desaforo":
-            $ karma_relacionamento -= 10
+            show mulher_trabalho neutra at right:
+                yalign 0.2
+            $ karma_relacionamento = -10
             jump rota_atitude
 
     return

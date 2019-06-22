@@ -162,7 +162,7 @@ label me_demito:
 
     hide chefe1
 
-    scene bg bairro
+    scene bg demissao
     with fade
 
     "Não foi uma decisão fácil"

@@ -4,18 +4,23 @@ label rota_passiva:
     scene bg sala
     with fade
 
-    show marido neutro:
+    show marido neutro at left:
         yalign 0.2
 
     marido "..."
 
     marido "Você esta sobrecarregada"
     marido "Qualquer um consegue enxergar isso"
-    show marido satisfeito:
+    show marido satisfeito at left:
         yalign 0.2
     marido "Conciliar trabalho e faculdade está sendo demais para você"
 
-    show marido neutro:
+    show marido neutro at left:
+        yalign 0.2
+
+
+    show mulher_trabalho surpresa at right:
+        yalign 0.2
     
     marido "Basta dar uma olhada nessa casa que a gente vê que você não esta dando conta"
 
@@ -25,12 +30,25 @@ label rota_passiva:
         marido"Esta claro que ou você trabalha, ou você estuda"
 
         "Acho que vou trancar a faculdade":
+
+
+            show mulher_trabalho triste at right:
+                yalign 0.2
+            personagem "Acho que vou trancar a faculdade então..."
             
             $ karma_relacionamento += 10
             $ karma_autoestima -= 10
             jump rota_passiva_pede_demissao
 
         "Acho que vou pedir demissão":
+
+
+            show mulher_trabalho triste at right:
+                yalign 0.2
+            personagem "Acho que vou largar o emprego então"
+
+
+            personagem "Me dedicar mais a nós"
             
             $ karma_relacionamento += 10
             $ karma_autoestima -= 10
