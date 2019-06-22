@@ -5,33 +5,35 @@
 
 define personagem = Character("Personagem", who_color='#8904B1')
 define marido = Character("Marido", who_color='#444444')
-define chefe1 = Character("Chefe", who_color='#444444')
+define chefe1 = Character("Chefe", who_color='#222222')
 default karma = 0
+
+default karma_autoestima = 0
+default karma_estudo = 0
+
+default karma_relacionamento = 0
 
 
 # The game starts here.
 
 label start:
 
-    # Show a background. This uses a placeholder by default, but you can
-    # add a file (named either "bg room.png" or "bg room.jpg") to the
-    # images directory to show it.
 
-    jump rota_probelma_trabalho
+    #jump me_demito
 
     scene bg bairro
 
-    # This shows a character sprite. A placeholder is used, but you can
-    # replace it by adding a file named "eileen happy.png" to the images
-    # directory.
-
-
-    # These display lines of dialogue.
 
 
     "Depois de um dia muito cansativo no trabalho"
 
+    show mulher_trabalho neutra:
+        yalign 0.2
+
     "Tudo que você quer é chegar em casa"
+
+    show mulher_trabalho triste:
+        yalign 0.2
 
     "Mas ainda você ainda tem uma aula pra assitir..."
 
@@ -43,9 +45,12 @@ label start:
         personagem "Então, será que..."
 
         "Vou direto pra casa, descançar um pouco seria bom":
+
+            $ karma_estudo -= 10
             jump volta_pra_casa
 
         "Melhor ir pra faculdade":
+            $ karma_estudo += 10
             jump vai_pra_faculdade
 
 
@@ -155,16 +160,24 @@ label briga_com_marido_leve:
 
         "teste"
 
-        "Tambem estou morrendo de fome, você chegou mais cedo? Poderia ter adiantado algo":
-            $ karma -= 5
+        "Tambem estou morrendo de fome"
+            personagem "Você chegou mais cedo..."
+            personagem "Porque não preparou nada pra gente?"
+            
+            $ karma_relacionamento -= 10
+            $ karma_autoestima += 10
             jump vou_preparar_algo
 
         "Não tem como chegar mais cedo com essa rotina. Mas vou preparar algo gostoso pra gente":
-            $ karma = 5
+            
+            personagem "Estou estudando para conseguir um futuro melhor pra gente"
+            personagem "Mas vou preparar algo gostoso para a gente comer"
+            $ karma_relacionamento -= 10
             jump vou_preparar_algo
 
         "Melhor eu ir direto pra cozinha preparar algo":
-            $ karma -= 15
+            $ karma_relacionamento += 10
+            $ karma_autoestima -= 10
             jump vou_preparar_algo
 
 
@@ -190,12 +203,11 @@ label vou_preparar_algo:
         "..."
 
         "Sim, eu sei":
-            $ karma -= 5
+            $ karma_relacionamento += 10
             jump dia2
 
         "...":
-
-            $ karma += 5
+            $ karma_relacionamento -= 10
             jump dia2
 
     jump dia2
@@ -223,20 +235,28 @@ label dia_cheio_trabalho:
 
     personagem "Mal tenho conseguido dar conta dessas demandas..."
 
-    show chefe1 neutro:
+    show chefe1 neutro at left:
         yalign 0.2
 
     chefe1 "Mocinha"
 
-    extend "preciso que você cuide desses relatórios de balanço..."
+    extend ", preciso que você cuide desses relatórios de balanço..."
 
     menu:
         personagem "(\"mocinha\", Odeio que me chamem assim)"
 
         "Pois não, como posso ajudar":
+            show mulher_trabalho triste at left:
+                yalign 0.2
+            $ karma_autoestima -= 10
+            chefe1 "Preciso desses relatórios de balanço paara amanhã!"
             personagem "Relatórios de balanço?"
 
         "Desculpa, esta falando comigo?":
+            show mulher_trabalho neutra at left:
+                yalign 0.2
+            $ karma_autoestima += 10
+            chefe1 "Preciso desses relatórios de balanço paara amanhã!"
             personagem "Relatórios de balanço?"
 
     personagem "Mas isso é responsabilidade de outro departamento..."
@@ -299,12 +319,12 @@ label briga_com_marido_seria:
         "Mesmo exausta, seu marido te cobra que ainda faça cumpra com as obrigações da casa"
 
         "Você abaixa a cabeça e apenas consente.":
-            $ karma -= 5
+            
+            $ karma_relacionamento += 10
             jump rota_passiva
 
         "Você responde ao desaforo":
-
-            $ karma += 5
+            $ karma_relacionamento -= 10
             jump rota_atitude
 
     return

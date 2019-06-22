@@ -25,16 +25,21 @@ label rota_passiva:
         marido"Esta claro que ou você trabalha, ou você estuda"
 
         "Acho que vou trancar a faculdade":
-            $ karma -= 15
+            
+            $ karma_relacionamento += 10
+            $ karma_autoestima -= 10
             jump rota_passiva_pede_demissao
 
         "Acho que vou pedir demissão":
-            $ karma -= 10
+            
+            $ karma_relacionamento += 10
+            $ karma_autoestima -= 10
             jump rota_passiva_tranca_faculdade
 
         "Você responde ao desaforo":
 
-            $ karma += 5
+            $ karma_relacionamento -= 10
+            $ karma_autoestima += 10
             jump rota_atitude
 
 label rota_passiva_pede_demissao:
@@ -55,7 +60,7 @@ label rota_passiva_pede_demissao:
         chefe1 "Tem certeza de que é isso mesmo que você quer fazer?"
 
         "Sim, eu tenho":
-            $ karma -= 20
+            $ karma_autoestima += 10
 
 
     show chefe1 pena:

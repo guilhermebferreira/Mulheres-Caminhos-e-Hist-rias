@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-The label rota_passiva_tranca_faculdade is defined twice, at
-  File "game/rota_atitude.rpy", line 62 and
-  File "game/rota_passiva.rpy", line 75.
+File "game/rota_probelma_trabalho.rpy", line 158: expected ':' not found.
+    label vou_me_adequar
+                        ^
 
 Ren'Py Version: Ren'Py 7.3.0.271
-Sat Jun 22 10:53:56 2019
+Sat Jun 22 12:06:23 2019
