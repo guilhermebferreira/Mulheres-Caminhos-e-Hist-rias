@@ -3,8 +3,8 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define e = Character("Personagem")
-define m = Character("Marido")
+define e = Character("Personagem", who_color='#8904B1')
+define m = Character("Marido", who_color='#444444')
 default karma = 0
 
 
@@ -29,13 +29,12 @@ label start:
 
     "No final do dia, após duas horas de ônibus"
 
-    "seu karma atual é [karma]"
 
 
     show voce cansada
 
 
-    e "Você esta ao mesmo tempo cansada pelo dia longo. \nE feliz por estar chegando em casa"
+    e"Você esta ao mesmo tempo cansada pelo dia longo. \nE feliz por estar chegando em casa"
 
     jump briga_com_marido_leve
 
@@ -152,7 +151,6 @@ label vou_preparar_algo:
 
 label tem_comida_na_geladeira:
     scene bg sala
-    with fade
 
 
     show marido zangado:
@@ -177,7 +175,7 @@ label dia2:
     with fade
 
     "..."
-    return
+    jump briga_com_marido_seria
 
 
 label briga_com_marido_seria:
@@ -205,11 +203,14 @@ label briga_com_marido_seria:
 
         "Você abaixa a cabeça e consente.":
             $ karma -= 5
-            jump vou_pra_cozinha
+            jump rota_passiva
 
         "Você responde ao desaforo":
 
             $ karma += 5
-            jump responde_desaforo
+            jump rota_atitude
 
     return
+
+    
+    
