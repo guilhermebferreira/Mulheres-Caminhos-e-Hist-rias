@@ -2,9 +2,13 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 150: Only one say menuitem may exist per menu.
-    m "E algo gostoso na cozinha para comer..."
-                                               ^
+File "game/script.rpy", line 162: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Não tem como chegar mais cedo com essa rotina. Mas vou preparar algo gostoso pra gente"
+                                                                                            ^
+
+File "game/script.rpy", line 192: end of line expected.
+    e "Sim, eu sei":
+                   ^
 
 Ren'Py Version: Ren'Py 7.3.0.271
-Fri Jun 21 17:10:04 2019
+Fri Jun 21 22:03:54 2019
