@@ -202,11 +202,18 @@ label vou_preparar_algo:
 
 
 label dia2:
-    scene bg sala
+    scene bg bairro
     with fade
 
-    "..."
+    "um novo dia..."
     jump briga_com_marido_seria
+
+label dia_cheio_trabalho:
+    scene bg trabalho1
+    with fade
+
+    " Gina está se sentindo muito sobrecarregada. Ela acredita que por ter entrado agora, os superiores dela estão pegando muito pesado, pedindo pra ela fazer tarefas que não são da sua função"
+    " e ficar até depois do seu horário de trabalho"
 
 
 label briga_com_marido_seria:
