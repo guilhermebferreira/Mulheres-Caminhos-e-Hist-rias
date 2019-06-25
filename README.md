@@ -1,3 +1,7 @@
+# HACKATHON TEMPOS DE MUDANÇAS
+
+1ª Lugar no hackthon Tempos de Mudanças que ocorreu na Campus Party Brasília 2019 #CPBSB3
+
 *O QUE É*
 
 - Um jogo, no formato visual novel, no qual a história se desenvolve de acordo com as ações do jogador. O jogador será colocado no papel de uma personagem feminina, inserida em um contexto socio-econômico bem definido e a partir daí lidando com situações que, em geral, podem fazer parte desse cotidiano.
