@@ -38,7 +38,7 @@ label rota_passiva:
             
             $ karma_relacionamento += 10
             $ karma_autoestima -= 10
-            jump rota_passiva_pede_demissao
+            jump rota_passiva_tranca_faculdade
 
         "Acho que vou pedir demissão":
 
@@ -52,7 +52,7 @@ label rota_passiva:
             
             $ karma_relacionamento += 10
             $ karma_autoestima -= 10
-            jump rota_passiva_tranca_faculdade
+            jump rota_passiva_pede_demissao
 
         "Você responde ao desaforo":
 
