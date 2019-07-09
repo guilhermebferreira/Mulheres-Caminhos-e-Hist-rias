@@ -1,0 +1,189 @@
+Identifier	Character	Dialogue	Filename	Line Number
+final_demissao_5ce622e6		Você não esta acostumada a ficar em casa em um dia útil	game/finais.rpy	13
+final_demissao_bfda120e		É dificil se sentir bem desse jeito	game/finais.rpy	23
+final_demissao_5ce622e6_1		Você não esta acostumada a ficar em casa em um dia útil	game/finais.rpy	37
+final_demissao_4680d281	marido	Não fique assim...	game/finais.rpy	50
+final_demissao_3e752062	marido	Agora você tem mais tempo pra casa	game/finais.rpy	54
+final_demissao_263c12ab	extend	\nVocê vai ver que era disso que você estava precisando	game/finais.rpy	58
+final_demissao_5a358c6d		Você até tenta se acostumar a finar em casa...	game/finais.rpy	64
+final_na_empresa_9f9009b5		Você tem mais tempo em casa	game/finais.rpy	84
+final_na_empresa_2c5f0286	extend	, \nmas isso não parece ser o suficiente	game/finais.rpy	85
+final_na_empresa_2632dec9		A rotina te deixa cada vez mais triste	game/finais.rpy	93
+final_na_empresa_ade774d1		Você ouve falar sobre o Centro de Valorização da Vida	game/finais.rpy	96
+final_na_empresa_6c51d15a	personagem	CVV: 188	game/finais.rpy	102
+final_na_empresa_77acbda0	extend	...\n talvez eu deva ligar	game/finais.rpy	103
+final_empresaria_db6036c3		Você decidiu que ficar parada não era uma opção	game/finais.rpy	127
+final_empresaria_cc08acef		Como você tinha algumas economias	game/finais.rpy	132
+final_empresaria_6420d9de	extend	, \nprocurar outro emprego não era uma necessidade imediata	game/finais.rpy	138
+final_empresaria_dac0dc70		Você usou tudo que passou nos últimos dias como combustivel	game/finais.rpy	150
+final_empresaria_fb697fd0		E se dedicou completamente em buscar qualificação proficional	game/finais.rpy	152
+final_empresaria_e032222c		A remcompensa não veio de um dia pro outro	game/finais.rpy	154
+final_empresaria_4182a6d2		Mas você chegou lá!	game/finais.rpy	163
+final_empresaria_326eb7a6		E tem muito orgulho da mulher que se tornou	game/finais.rpy	168
+final_empresaria_65ee6127	personagem	Não há nada que você não possa fazer	game/finais.rpy	170
+final_pequena_empreendedora_936a5982		Ficar alguns dias em casa te fez bem	game/finais.rpy	180
+final_pequena_empreendedora_1bf58977		Você se conectou melhor com a comunidade a sua volta	game/finais.rpy	187
+final_pequena_empreendedora_1ab6f269		Mas você não ficou parada	game/finais.rpy	189
+final_pequena_empreendedora_ea7b0f8a		Para manter a mente ocupada, você passou bastante tempo na cozinha	game/finais.rpy	194
+final_pequena_empreendedora_46f5c3df		Os bolos que você fez, fizeram sucesso na vizinhança	game/finais.rpy	196
+final_pequena_empreendedora_3295c96e		Você percebeu nisso uma oportunidade de negocio	game/finais.rpy	204
+final_pequena_empreendedora_e3ae273b	personagem	Talvez minha realização profissional não estivesse onde eu estava buscando inicialmente!	game/finais.rpy	206
+final_procura_novo_emprego_db6036c3		Você decidiu que ficar parada não era uma opção	game/finais.rpy	217
+final_procura_novo_emprego_b2e8990c		Atualizou o seu curriculo e partiu pra luta	game/finais.rpy	227
+final_avisos_d9d6ec51		Se você já passou 	game/finais.rpy	236
+final_avisos_a15605e9	extend	,\n está passando	game/finais.rpy	237
+final_avisos_285b79c2	extend	\n ou conhece alguém que passe por qualquer tipo de abuso	game/finais.rpy	239
+final_avisos_534f7362		Busque ajuda	game/finais.rpy	241
+final_avisos_22816ab9		Assédio, é sempre algo grave!	game/finais.rpy	243
+final_avisos_38e1104c	extend	\nDenuncie!	game/finais.rpy	245
+final_avisos_d5845e7f		Delegacias de Atendimento à Mulher: 180	game/finais.rpy	247
+final_avisos_518d0f56	extend	\nDelegacia da Mulher no DF: 61 3244-3400	game/finais.rpy	249
+final_avisos_126db081		Disque-Denúncia: 181	game/finais.rpy	252
+final_avisos_1051e6c3		Não importa pelo que você esteja passando	game/finais.rpy	255
+final_avisos_3843c31c	extend	\nOu com o que você esteja lidando	game/finais.rpy	257
+final_avisos_8ee71a8e	extend	\n Sempre haverá alguem para te ouvir	game/finais.rpy	259
+final_avisos_50c995e4		Centro de Valorização da Vida: 188	game/finais.rpy	261
+final_avisos_b1985715	extend	\nCVV Brasília: (61) 3326-4111	game/finais.rpy	263
+final_avisos_e42cc322		Busque ajuda, sua vida importa	game/finais.rpy	265
+final_avisos_4f79ee8f	extend	\nNão fique sozinha. Estamos com você!	game/finais.rpy	267
+rota_atitude_36c2e1b6	personagem	Não esta certo isso	game/rota_atitude.rpy	10
+rota_atitude_5fff6a07	personagem	Gosto muito de você, mas...	game/rota_atitude.rpy	12
+rota_atitude_f696511c	personagem	Você esta pedindo que eu abra mão de muita coisa	game/rota_atitude.rpy	17
+rota_atitude_9a89dcb2	personagem	Você esta pedindo...	game/rota_atitude.rpy	19
+rota_atitude_b081c786	extend	\nVocê esta exigindo que eu abra mão do meu futuro	game/rota_atitude.rpy	23
+rota_atitude_d40fd5ea	marido	Você esta apenas confusa...	game/rota_atitude.rpy	28
+rota_atitude_9ab1da2a	personagem	Não	game/rota_atitude.rpy	33
+rota_atitude_3af628f5	extend	, muito pelo contrario	game/rota_atitude.rpy	36
+rota_atitude_b8157818	personagem	Faz tempo que não tenho tanta certeza de algo	game/rota_atitude.rpy	37
+rota_atitude_93f65bf1	personagem	Talvez esteja	game/rota_atitude.rpy	39
+rota_atitude_534f661f	extend	, mass...	game/rota_atitude.rpy	40
+rota_atitude_fc888e09	personagem	Você pediu que eu fizesse uma escolha.	game/rota_atitude.rpy	45
+rota_atitude_89827347	personagem	Eu fiz	game/rota_atitude.rpy	50
+rota_atitude_8c84e37e	personagem	Estou escolhendo me valorizar	game/rota_atitude.rpy	54
+fim_relacionamento_410b7198		No dia seguinte	game/rota_atitude.rpy	67
+fim_relacionamento_5a7839dc	extend	, você acordou se sentindo mais leve...	game/rota_atitude.rpy	69
+fim_relacionamento_6702dcba		Era estranho encarar a casa vazia	game/rota_atitude.rpy	73
+fim_relacionamento_172a0f36		Ficava a sensação de que estava faltando alguma coisa	game/rota_atitude.rpy	76
+fim_relacionamento_1eee5ae1		Mas no fundo você sabe que foi a decisão correta	game/rota_atitude.rpy	78
+fim_relacionamento_541c818a		Você prepara um café e vai para o trabalho	game/rota_atitude.rpy	82
+rota_passiva_4d8748b1	marido	...	game/rota_passiva.rpy	10
+rota_passiva_25deac98	marido	Você esta sobrecarregada	game/rota_passiva.rpy	12
+rota_passiva_6588e890	marido	Qualquer um consegue enxergar isso	game/rota_passiva.rpy	13
+rota_passiva_0889c032	marido	Conciliar trabalho e faculdade está sendo demais para você	game/rota_passiva.rpy	16
+rota_passiva_84cb4cb9	marido	Basta dar uma olhada nessa casa que a gente vê que você não esta dando conta	game/rota_passiva.rpy	25
+rota_passiva_cf3086ea	marido	Esta claro que ou você trabalha, ou você estuda	game/rota_passiva.rpy	28
+rota_passiva_da1f1be0	personagem	Acho que vou trancar a faculdade então...	game/rota_passiva.rpy	37
+rota_passiva_ca0c65a1	personagem	Acho que vou largar o emprego então	game/rota_passiva.rpy	48
+rota_passiva_db0797dd	personagem	Me dedicar mais a nós	game/rota_passiva.rpy	51
+rota_passiva_pede_demissao_410b7198		No dia seguinte	game/rota_passiva.rpy	67
+rota_passiva_pede_demissao_b64f1219	extend	, você foi ao centro apenas para pedir demissão	game/rota_passiva.rpy	69
+rota_passiva_pede_demissao_80075ee4	chefe1	Tem certeza de que é isso mesmo que você quer fazer?	game/rota_passiva.rpy	76
+rota_passiva_pede_demissao_4520f23b	chefe1	é uma pena...	game/rota_passiva.rpy	87
+rota_passiva_pede_demissao_03fbba5e	chefe1	Boa sorte na sua jornada	game/rota_passiva.rpy	91
+rota_passiva_tranca_faculdade_410b7198		No dia seguinte	game/rota_passiva.rpy	103
+rota_passiva_tranca_faculdade_a2641268	extend	, você acordou mais cedo para protocolar o trancamento do curso antes de ir para o trabalho...	game/rota_passiva.rpy	105
+rota_passiva_tranca_faculdade_4a89f6b8		Não fo nem um pouco fácil preencher aquele formulário	game/rota_passiva.rpy	109
+rota_problema_trabalho_34e35a37	chefe1	É isso aqui que você chama de relatório???	game/rota_probelma_trabalho.rpy	9
+rota_problema_trabalho_4176d38f	chefe1	Não tem nada do que eu preciso aqui	game/rota_probelma_trabalho.rpy	12
+rota_problema_trabalho_015877cd	chefe1	Mocinha	game/rota_probelma_trabalho.rpy	18
+rota_problema_trabalho_352ea5b0	extend	, se você quiser continuar por aqui, vou precisar que você vista a camisa da empresa!	game/rota_probelma_trabalho.rpy	20
+rota_problema_trabalho_960de9f9	chefe1	Você não tem capacidade de fazer um simples relatório sozinha?	game/rota_probelma_trabalho.rpy	29
+rota_problema_trabalho_773f5f4f	personagem	Olha, esses relatórios que você me pediu com urgência...	game/rota_probelma_trabalho.rpy	39
+rota_problema_trabalho_3b7fd2c9	extend	\n Em cima da hora	game/rota_probelma_trabalho.rpy	40
+rota_problema_trabalho_2cc286bc	personagem	Nem são de responsabilidade do meu departamento	game/rota_probelma_trabalho.rpy	41
+rota_problema_trabalho_99f1300e	personagem	E eu visto a camisa da empresa sim!	game/rota_probelma_trabalho.rpy	45
+rota_problema_trabalho_7f8d8e8d	personagem	O maior exemplo disso foi eu ter ficado mais de duas horas além do expediente ontem pra resolver isso!	game/rota_probelma_trabalho.rpy	46
+rota_problema_trabalho_65cba146	personagem	Desculpe	game/rota_probelma_trabalho.rpy	57
+rota_problema_trabalho_e5e4c5da	extend	, vou tentar fazer melhor	game/rota_probelma_trabalho.rpy	61
+rota_problema_trabalho_308299d3	personagem	Irei agora mesmo revisar estes relatórios	game/rota_probelma_trabalho.rpy	64
+rota_problema_trabalho_ee58e758	chefe1	Esterei esperando por eles as 14 horas, na minha mesa	game/rota_probelma_trabalho.rpy	69
+rota_problema_trabalho_b25f0898	personagem	Olha, eu fiquei até depois do expediente ontem para poder entregar esses relatórios	game/rota_probelma_trabalho.rpy	78
+rota_problema_trabalho_9aeddb14	personagem	Eu assumi essa demanda devido a urgencia	game/rota_probelma_trabalho.rpy	79
+rota_problema_trabalho_c6fb7a97	personagem	Se não esta bom	game/rota_probelma_trabalho.rpy	80
+rota_problema_trabalho_cbf9282f	extend	, podemos melhorar	game/rota_probelma_trabalho.rpy	85
+rota_problema_trabalho_616b1bd7	personagem	Mas não acho legal você falar assim comigo	game/rota_probelma_trabalho.rpy	86
+vai_continuar_na_empresa_d6eb3a50	chefe1	Mocinha, com esse comportamento	game/rota_probelma_trabalho.rpy	107
+vai_continuar_na_empresa_169ac4e3	extend	, eu não sinto que esta havendo uma colaboração aqui	game/rota_probelma_trabalho.rpy	109
+vai_continuar_na_empresa_15bf973a	chefe1	Você precisa dar um jeito nesse seu comportamento mocinha	game/rota_probelma_trabalho.rpy	112
+vai_continuar_na_empresa_1d90435a	personagem	Esse emprego não vale isso tudo não	game/rota_probelma_trabalho.rpy	121
+vai_continuar_na_empresa_6fa56ee7	personagem	Eu não me capacitei	game/rota_probelma_trabalho.rpy	122
+vai_continuar_na_empresa_ed6a73c5	personagem	Eu não entrego meu suor aqui	game/rota_probelma_trabalho.rpy	123
+vai_continuar_na_empresa_afda4e4a	extend	, pra ficar ouvindo isso	game/rota_probelma_trabalho.rpy	125
+vai_continuar_na_empresa_ddebd345	personagem	Ser tratada dessa maneira	game/rota_probelma_trabalho.rpy	126
+vai_continuar_na_empresa_7a4013ae	chefe1	Então...	game/rota_probelma_trabalho.rpy	131
+vai_continuar_na_empresa_dfdf58bc	personagem	Então eu me demito	game/rota_probelma_trabalho.rpy	134
+vai_continuar_na_empresa_f531914a	personagem	Vou me adequar ao que a empresa espera de mim	game/rota_probelma_trabalho.rpy	145
+me_demito_acf6b8ff	chefe1	Entendo que você esteja cansada	game/rota_probelma_trabalho.rpy	158
+me_demito_d828c5b7	chefe1	Você deve estar confusa	game/rota_probelma_trabalho.rpy	160
+me_demito_bdb3d63a	chefe1	Esta esquecendo quem precisa de quem aqui	game/rota_probelma_trabalho.rpy	164
+me_demito_2f844c2c	personagem	Para tratar uma funcionária desse jeito	game/rota_probelma_trabalho.rpy	174
+me_demito_a982a90f	extend	\nQuem está confuso aqui é você	game/rota_probelma_trabalho.rpy	176
+me_demito_ed1feb36	personagem	Eu me demito!	game/rota_probelma_trabalho.rpy	179
+me_demito_e6e17171		Não foi uma decisão fácil	game/rota_probelma_trabalho.rpy	186
+me_demito_067b33cd		Mas aquele ambiente de trabalho não estava te fazendo bem	game/rota_probelma_trabalho.rpy	188
+vou_me_adequar_0782070c		Você tenta se ajustar ao que a empresa espera de você	game/rota_probelma_trabalho.rpy	201
+vou_me_adequar_0ab5d4b3		Mas nunca é o suficiente	game/rota_probelma_trabalho.rpy	208
+vou_me_adequar_d8123556		Aos poucos você deixa de se sentir como você mesma	game/rota_probelma_trabalho.rpy	212
+vou_me_adequar_f41d8bb0		Você sabe que em algum ponto	game/rota_probelma_trabalho.rpy	214
+vou_me_adequar_786863e6	extend	, você se perdeu	game/rota_probelma_trabalho.rpy	220
+start_8545dbe9		Depois de um dia muito cansativo no trabalho	game/script.rpy	28
+start_63e664b0		Tudo que você quer é chegar em casa	game/script.rpy	33
+start_0cdb0e4e		Mas ainda você ainda tem uma aula pra assistir...	game/script.rpy	38
+start_bbd0acc4	personagem	Estou exausta.	game/script.rpy	40
+start_e7be75d6	extend	\nAcho que não faria mal deixar de ir na pós só por hoje	game/script.rpy	42
+start_be0992bc	personagem	Então, será que...	game/script.rpy	44
+vou_pra_cozinha_30ed2f10	personagem	você tem razão...	game/script.rpy	68
+vou_pra_cozinha_94f682d6	personagem	vou preparar alguma coisa pra gente comer	game/script.rpy	74
+vou_pra_cozinha_a20cefa7		...	game/script.rpy	76
+responde_desaforo_6a258429	personagem	você não vê que fiquei o dia inteiro dando duro	game/script.rpy	87
+responde_desaforo_a741ecd8	personagem	trabalhando pra ajudar a colocar comido aqui dentro de casa, assim como você	game/script.rpy	88
+responde_desaforo_0648177c	personagem	e ainda estudando pra tentar um futuro melhor pra gente	game/script.rpy	89
+responde_desaforo_91557b4d	personagem	você acha que sou obrigada?	game/script.rpy	92
+responde_desaforo_a20cefa7		...	game/script.rpy	98
+volta_pra_casa_88358866		Em um dia comum, 40 minutos são suficentes para chegar em casa	game/script.rpy	108
+volta_pra_casa_a452c0a9		Mas um engarrafento em uma das vias principais te fez passar mais de 2 horas no onibus	game/script.rpy	110
+vai_pra_faculdade_ac64f442		Apesar de não ser sua disciplina preferida	game/script.rpy	118
+vai_pra_faculdade_f0ed396a		Você assistiu uma aula inspiradora	game/script.rpy	119
+vai_pra_faculdade_82379c8f		Que acendeu novamente aquela esperança de um futuro melhor para você	game/script.rpy	120
+vai_pra_faculdade_752de4a4		Uma carreira	game/script.rpy	121
+chega_em_casa_ffbb9e29		Você está ao mesmo tempo cansada pelo dia longo. \nE feliz por estar chegando em casa	game/script.rpy	133
+chega_em_casa_5c46aec9		Você mora em um bairro afastado no entorno de brasília...	game/script.rpy	135
+chega_em_casa_4ea57635		você tira a chave da bolsa e apenas de saber que está chegando em casa...	game/script.rpy	138
+chega_em_casa_3cc640e2	extend	\nse sente leve	game/script.rpy	144
+chega_em_casa_1b76cc6b	personagem	É sempre bom chegar em casa!	game/script.rpy	146
+briga_com_marido_leve_1e32a036	marido	Você chegou bem tarde hoje	game/script.rpy	156
+briga_com_marido_leve_5562dc86	marido	Isto está começando a virar uma rotina pelo visto	game/script.rpy	162
+briga_com_marido_leve_004ea1a3	marido	Enfim...	game/script.rpy	170
+briga_com_marido_leve_6405f159	marido	Já são quase nove, estou morrendo de fome	game/script.rpy	175
+briga_com_marido_leve_22b9fff7	personagem	Você chegou mais cedo...	game/script.rpy	186
+briga_com_marido_leve_900cf1ac	personagem	Porque não preparou nada pra gente?	game/script.rpy	187
+briga_com_marido_leve_1cad1129	personagem	Estou estudando para conseguir um futuro melhor pra gente	game/script.rpy	200
+briga_com_marido_leve_fd92dc2e	personagem	Mas vou preparar algo gostoso para a gente comer	game/script.rpy	206
+briga_com_marido_leve_e62d7acc	personagem	Melhor eu ir direto pra cozinha preparar algo	game/script.rpy	217
+vou_preparar_algo_3d6c991b	marido	Você sabe que eu te amo	game/script.rpy	232
+vou_preparar_algo_5edc7a6c	marido	Não sabe?	game/script.rpy	235
+dia2_63101383		Você foi dormir extausta esse dia	game/script.rpy	260
+dia2_410b7198		No dia seguinte	game/script.rpy	265
+dia2_131a4222	extend	, você acordou bem cedo para não se atrasar para o trabalho	game/script.rpy	267
+dia_cheio_trabalho_bdece93d	personagem	Tenho tanta coisa pra fazer	game/script.rpy	274
+dia_cheio_trabalho_af45a02d	personagem	Mal tenho conseguido dar conta dessas demandas...	game/script.rpy	276
+dia_cheio_trabalho_015877cd	chefe1	Mocinha	game/script.rpy	281
+dia_cheio_trabalho_3aa09997	extend	, preciso que você cuide desses relatórios de balanço...	game/script.rpy	283
+dia_cheio_trabalho_f67b51a0	personagem	("mocinha", Odeio que me chamem assim)	game/script.rpy	285
+dia_cheio_trabalho_7539c3ad	chefe1	Preciso desses relatórios de balanço para amanhã!	game/script.rpy	292
+dia_cheio_trabalho_5c93f3b2	personagem	Relatórios de balanço?	game/script.rpy	293
+dia_cheio_trabalho_7539c3ad_1	chefe1	Preciso desses relatórios de balanço para amanhã!	game/script.rpy	299
+dia_cheio_trabalho_5c93f3b2_1	personagem	Relatórios de balanço?	game/script.rpy	300
+dia_cheio_trabalho_5cf908b4	personagem	Mas isso é responsabilidade de outro departamento...	game/script.rpy	302
+dia_cheio_trabalho_0018f173	chefe1	Eles estão um pouco sobrecarregados esse semana	game/script.rpy	304
+dia_cheio_trabalho_cef14a72	chefe1	E alguém realmente precisa cuidar desses relatórios	game/script.rpy	306
+dia_cheio_trabalho_35fbac68	chefe1	Consegue me entregar ainda hoje?	game/script.rpy	312
+dia_cheio_trabalho_8c22e6e0	personagem	E quem me ajuda com a minhas demandas?	game/script.rpy	316
+dia_cheio_trabalho_e1a169ba	personagem	Você não pediria se não fossem muito importantes, certo?	game/script.rpy	323
+dia_cheio_trabalho_c4ebe2e0	chefe1	São bem mais do que isso mocinha	game/script.rpy	324
+relatorios_a8c1ae1f		Você acaba ficando bem além do horario de expediente para conseguir entregar todas as demanas	game/script.rpy	340
+relatorios_229d6d16		Bem além do que pretendia	game/script.rpy	342
+briga_com_marido_seria_4e1af0e0	marido	Assim fica dificil	game/script.rpy	355
+briga_com_marido_seria_c9907a5b	marido	Outro dia do mesmo jeito?	game/script.rpy	357
+briga_com_marido_seria_c03c4116	marido	Parece que você não tem consideração comigo	game/script.rpy	363
+briga_com_marido_seria_4b60621e	marido	Você não vai falar nada?	game/script.rpy	369
